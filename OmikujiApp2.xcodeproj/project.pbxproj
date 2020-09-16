@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20D48242511A96A009CAE79 /* drum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C20D48222511A96A009CAE79 /* drum.mp3 */; };
+		C20D48252511A96A009CAE79 /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C20D48232511A96A009CAE79 /* bell.mp3 */; };
 		C29A5B392510917C000AE79E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A5B382510917C000AE79E /* AppDelegate.swift */; };
 		C29A5B3B2510917C000AE79E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A5B3A2510917C000AE79E /* SceneDelegate.swift */; };
 		C29A5B3D2510917C000AE79E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29A5B3C2510917C000AE79E /* ViewController.swift */; };
 		C29A5B402510917C000AE79E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C29A5B3E2510917C000AE79E /* Main.storyboard */; };
 		C29A5B422510917E000AE79E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C29A5B412510917E000AE79E /* Assets.xcassets */; };
 		C29A5B452510917E000AE79E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C29A5B432510917E000AE79E /* LaunchScreen.storyboard */; };
-		C29A5BB625119128000AE79E /* drum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C29A5BB425119128000AE79E /* drum.mp3 */; };
-		C29A5BB725119128000AE79E /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C29A5BB525119128000AE79E /* bell.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C20D48222511A96A009CAE79 /* drum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drum.mp3; sourceTree = "<group>"; };
+		C20D48232511A96A009CAE79 /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
 		C29A5B352510917C000AE79E /* OmikujiApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmikujiApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29A5B382510917C000AE79E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C29A5B3A2510917C000AE79E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +28,6 @@
 		C29A5B412510917E000AE79E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C29A5B442510917E000AE79E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C29A5B462510917E000AE79E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C29A5BB425119128000AE79E /* drum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drum.mp3; sourceTree = "<group>"; };
-		C29A5BB525119128000AE79E /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,10 +41,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C20D48212511A96A009CAE79 /* omikuji_sound */ = {
+			isa = PBXGroup;
+			children = (
+				C20D48222511A96A009CAE79 /* drum.mp3 */,
+				C20D48232511A96A009CAE79 /* bell.mp3 */,
+			);
+			path = omikuji_sound;
+			sourceTree = "<group>";
+		};
 		C29A5B2C2510917C000AE79E = {
 			isa = PBXGroup;
 			children = (
-				C29A5BB325119128000AE79E /* omikuji_sound */,
+				C20D48212511A96A009CAE79 /* omikuji_sound */,
 				C29A5B372510917C000AE79E /* OmikujiApp2 */,
 				C29A5B362510917C000AE79E /* Products */,
 			);
@@ -70,16 +79,6 @@
 				C29A5B462510917E000AE79E /* Info.plist */,
 			);
 			path = OmikujiApp2;
-			sourceTree = "<group>";
-		};
-		C29A5BB325119128000AE79E /* omikuji_sound */ = {
-			isa = PBXGroup;
-			children = (
-				C29A5BB425119128000AE79E /* drum.mp3 */,
-				C29A5BB525119128000AE79E /* bell.mp3 */,
-			);
-			name = omikuji_sound;
-			path = ../../Desktop/omikuji_sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +140,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C29A5B452510917E000AE79E /* LaunchScreen.storyboard in Resources */,
-				C29A5BB725119128000AE79E /* bell.mp3 in Resources */,
+				C20D48252511A96A009CAE79 /* bell.mp3 in Resources */,
 				C29A5B422510917E000AE79E /* Assets.xcassets in Resources */,
-				C29A5BB625119128000AE79E /* drum.mp3 in Resources */,
+				C20D48242511A96A009CAE79 /* drum.mp3 in Resources */,
 				C29A5B402510917C000AE79E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
